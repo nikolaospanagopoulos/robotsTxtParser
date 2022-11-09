@@ -12,7 +12,6 @@ UserAgent::UserAgent(const UserAgent &source) : name{source.name} {
   websitesAllowed = new std::vector<std::string>{};
   *websitesNotToParse = *source.websitesNotToParse;
   *websitesAllowed = *source.websitesAllowed;
-  std::cout << "copy constructor called\n";
 }
 
 UserAgent::UserAgent(UserAgent &&source)
@@ -20,7 +19,6 @@ UserAgent::UserAgent(UserAgent &&source)
       websitesAllowed{source.websitesAllowed} {
   source.websitesAllowed = nullptr;
   source.websitesNotToParse = nullptr;
-  std::cout << "move constructor called\n";
 }
 
 UserAgent::~UserAgent() {
