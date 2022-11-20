@@ -5,6 +5,9 @@
 class UserAgent {
 
 private:
+  bool parseSymbols(const std::string &robotsUrl,
+                    const std::string &websiteUrl);
+
 public:
   bool canCrawlWebsite(const std::string websiteUrl);
   std::string name;

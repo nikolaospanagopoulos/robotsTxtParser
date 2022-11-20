@@ -17,7 +17,7 @@ int main() {
   }
 
   std::cout << "check if can be crawled" << std::endl;
-  if (ua->canCrawlWebsite("https://www.bbc.com/")) {
+  if (ua->canCrawlWebsite("https://www.bbc.com/food/recipes/shopping-list")) {
     std::cout << "can be crawled\n";
   } else {
     std::cout << "can not be crawled\n";
